@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+   <!-- Load the legacy EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("UnGk506oB_S-jin7q"); // Replace with your own Public Key
+  })();
+</script>
+
+
+</head>
+<body>
+    <div class="container">
+        <header class="animated">
+            <a href="home.html" onclick="loadContent('home.html'); return false; " class="logo"> Portfolio</a>
+
+            <div class="navbar">
+                <a href="home.html" onclick="loadContent('home.html'); return false;">Home</a>
+                <a href="skills.html" onclick="loadContent('skills.html'); return false;">Skills</a>
+                <a href="myproject.html" onclick="loadContent('myproject.html'); return false;">Projects</a>
+                <a href="mycontact.html"onclick="loadContent('mycontact.html'); return false;">Contact</a>
+            </div>
+
+        </header>
+
+        <section class="home animated" id="home2">
+
+            <div class="homeDetails">
+                <h1>Rihaan Shehariyar</h1>
+                <h2>Front End Developer</h2>
+                <p>I am a front-end developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy building responsive, user-friendly websites that offer smooth and engaging user experiences. I’m passionate about continuous learning and bringing creative ideas to life through clean and efficient code.</p>
+           
+            <div class="download">
+                <a href="#" class="btn">Download CV </a>
+
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/rihaan-shehariyar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/rihanshehariyar?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/Rihaan-Shehariyar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https:/wa.me/918921996927"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:rihaanshehariyar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+                </div>
+                 </div>
+            </div>
+            <div class="homeimg">
+                <div class="dp">
+                    <!-- <img src="my.jpg" alt="dp"> -->
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    </div>
+    <script src="myportfolio.js"></script>
+</body>
+</html>

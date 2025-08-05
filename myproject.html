@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .projectContent{
+        width: 100%; 
+      transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: .1s;
+    }
+    @keyframes slide-in{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+    .projectContent h1{
+        text-align:center;
+        position: relative;
+    }
+    .cloneContent span{
+        font-size: 34px;
+    }
+    .clonediv{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .clone{
+        width: 500px;
+        height: 250px;
+    }
+    
+</style>
+<body>
+    <div class="projectContent">
+        <h1>Projects</h1>
+        <div class="cloneProject">
+
+
+        <div class="cloneContent">
+        <span> Ease My Trip Clone</span>
+         
+            <p>This EaseMyTrip clone is a simple travel booking website interface built using HTML and CSS
+                 It replicates the look and layout of the original platform,
+                 including sections like flight search, hotel booking, offers, and navigation menus.
+                  The project focuses on front-end design to showcase responsive layout, clean UI, and basic structure,
+                   making it a great beginner-level practice for mastering HTML and CSS.</p>
+             
+                   </div>
+                     <div class="clonediv">   
+            <img src="./clone.png" alt="clone" class="clone">
+        </div>
+
+                  
+
+                   
+        </div>
+        
+         
+    </div>
+    
+</body>
+</html>

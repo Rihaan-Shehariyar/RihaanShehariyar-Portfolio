@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body{
+    height: 100vh;
+    background: url(background.jpg) no-repeat center / cover;
+    padding: 50px 5%;
+}
+.container{
+    position: relative;
+    height: 100%;
+    background-color: rgb(255, 255, 255, .1);
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease-in forwards;
+
+}
+@keyframes zoom-in{
+    100%{
+        transform: scale(1);
+    }
+}
+h1{
+    font-size: 40px;
+}
+.animated{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes slide-in{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.navbar a:hover{
+    border-color: white;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: white;
+    animation-delay: 1.5s;
+}
+.home p{
+    margin: 10px 0 20px; 
+}
+.homeDetails .download{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    box-shadow: 0 0 10px white;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: white;
+    box-shadow: none;
+}
+.homeDetails .icons{
+    margin-left: 20px;
+}
+
+.homeDetails .icons a{
+    display: inline flex;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.homeDetails .icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+.homeimg .dp{
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+    overflow: hidden;
+
+}
+
+.homeimg .dp img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    right: 5px;
+    top: 0px;
+
+
+}
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+
+  .homeimg .dp {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 auto;
+  }
+
+  .navbar a {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+
+  .homeDetails .icons {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  body {
+    padding: 30px 5%;
+  }
+
+  .container {
+    border-radius: 20px;
+    border-width: 1px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 5%;
+  }
+
+  .navbar {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .homeimg .dp {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .home p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 6px 18px;
+    font-size: 13px;
+  }
+
+  .homeDetails .icons a {
+    padding: 6px;
+    margin: 4px;
+  }
+}
+    
+
+
+
+
+
