@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+  .skillicons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 50px;
+    flex-wrap: wrap; 
+}
+
+.skillicons i {
+    font-size: 150px;
+    color: white;     
+    transform: translateY(30px);
+  opacity: 0;
+  animation: fade-slide 1s ease forwards;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@keyframes fade-slide {
+  to {
+    transform: none;  /* Clear transform so hover can use it freely */
+    opacity: 1;
+  }
+}
+
+.skillicons i:hover {
+  transform: scale(1.2); /* Now this works independently */
+}
+.skillicons i:nth-child(1) { animation-delay: 0s; }
+.skillicons i:nth-child(2) { animation-delay: 0.1s; }
+.skillicons i:nth-child(3) { animation-delay: 0.2s; }
+.skillicons i:nth-child(4) { animation-delay: 0.3s; }
+.skillicons i:nth-child(5) { animation-delay: 0.4s; }
+.skillicons i:nth-child(6) { animation-delay: 0.5s; }
+
+.html:hover{
+    color: #e44d26 ;
+}
+.css:hover{
+    color: #264de4;
+}
+.js:hover{
+    color: #f7df1e;
+}
+.python:hover{
+    color: #306998;
+}
+.react:hover{
+    color: #61dafb;
+}
+.go:hover{
+    color: #00acd7;
+}
+</style>
+<body>
+ 
+        <div class="skillicons">
+        <i class="fa-brands fa-html5 html"></i>
+        <i class="fa-brands fa-css3-alt css"></i>
+        <i class="fa-brands fa-js js"></i>
+        <i class="fa-brands fa-python python"></i>
+        <i class="fa-brands fa-react react"></i>
+        <i class="fa-brands fa-golang go"></i>
+        </div>
+    
+</body>
+</html>
