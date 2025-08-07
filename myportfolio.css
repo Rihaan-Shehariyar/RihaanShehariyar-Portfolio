@@ -155,6 +155,9 @@ header{
     text-align: center;
     padding-top: 120px;
   }
+  body{
+    height: auto;
+  }
 
   .homeimg .dp {
     width: 40vw;
@@ -191,7 +194,9 @@ header{
 @media (max-width: 600px) {
   body {
     padding: 30px 5%;
+    height: auto;
   }
+  
 
   .container {
     border-radius: 20px;
@@ -214,6 +219,10 @@ header{
   .navbar a {
     font-size: 14px;
     margin-left: 10px;
+    
+  }
+  .logo{
+    justify-content: center;
   }
 
   .homeimg .dp {
